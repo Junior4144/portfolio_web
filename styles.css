@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    background-color: white;
+    height:100vh;
+    flex-direction: column;
+    
+    
+}
+
+.header{
+    background-color: lightgrey;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    padding:25px;
+}
+.content{
+    flex:1;
+
+}
+.footer{
+    background-color: lightgrey;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    padding:25px;
+
+
+}
+
