@@ -48,6 +48,7 @@
             }
             &:hover{
                 color:#ffd700;
+
                 svg{
                     opacity:0;
                 }
@@ -55,16 +56,18 @@
                     opacity: 1;
                 }
             }
+            
             &:after {
                 content: '';
                 font-size: 9px;
-                letter-spacing: 20px;
+                letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
                 display: block;
                 width: 100%;
                 text-align: center;
                 opacity: 0;
+                -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
             }
             &:first-child{
@@ -86,6 +89,7 @@
             }
         }
         
+        
         a.active{
             svg{
                 color: #ffd700;
@@ -103,17 +107,22 @@
         list-style: none;
         text-align: center;
         margin:0;
+
         li{
             a{
-                padding: 7px;
+                padding: 7px 0;
                 display:block;
                 font-size: 15px;
                 line-height: 16px;
-
-                &:hover svg{
+                color: #4d4d4e;
+            }
+            &:hover{
+                .anchor-icon{
                     color: #ffd700;
                 }
+                
             }
+            
         }
     }
 } 
