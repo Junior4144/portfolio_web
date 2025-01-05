@@ -5,13 +5,15 @@ import Logo from './Logo'
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Loader from 'react-loaders';
 
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['u', 's', 't', 'a', 'v', 'o'];
-    const jobArray = ['i', 'n', 'c', 'o', 'm', 'i', 'n', 'g',' ', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.'];
-
+    const jobArray = ['i', 'n', 'c', 'o', 'm', 'i', 'n', 'g']
+    const jobArray_2 =[  's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.'];
+    
 
     useEffect(() => {
         setTimeout(() => {
@@ -20,6 +22,7 @@ const Home = () => {
     }, [])
 
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -36,6 +39,10 @@ const Home = () => {
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray} 
                 idx ={22}/>
+                <br />
+                <AnimatedLetters letterClass={letterClass}
+                strArray={jobArray_2} 
+                idx ={22}/>
                 </h1> 
                 <h2>CS Student / inspiring backend developer</h2>
                 <Link to ="/contact" className="flat-button">CONTACT ME</Link>
@@ -43,6 +50,8 @@ const Home = () => {
             </div>
             <Logo />
         </div>
+        <Loader type="pacman" />
+        </>
     );
 };
 
