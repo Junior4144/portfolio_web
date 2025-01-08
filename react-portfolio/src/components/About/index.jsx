@@ -26,13 +26,20 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                    I'm a 3rd year CS student at the University of Houston
+                I am a 3rd Computer Science student at the University of Houston. I'm passionate about exploring the realms of problem solving, building and maintain back-end infrastructure, and building robust applications.
                 </p>
+
+                <div>
+                    <p>Currently reading in order to become a better SWE:
+                        <ul>
+                            <li>Operating Systems: Three Easy Pieces</li>
+                            <li>Elements of Programming Interview In Python</li>
+                            <li>Computer Networking by James F. Kurose; Keith Ross</li>
+                        </ul>
+                    </p>
+                </div>
                 <p>
-                    example 2
-                </p>
-                <p>
-                    example 3
+                    I'm currently completing the Odin Project which involves learning the foundations of web development.
                 </p>
             </div>
 
