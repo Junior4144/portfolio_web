@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
 import React from 'react'
-import {Document} from 'react-pdf'; 
+
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
