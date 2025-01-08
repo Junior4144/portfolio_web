@@ -3,6 +3,9 @@ import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import {useState,useEffect} from 'react';
 
+import tic_tac_toe_img from "../../assets/images/tic-tac-toe-img.png"
+
+import todListImg from "../../assets/images/todoListImage.png"
 const Portfolio = () => {
 
 
@@ -20,19 +23,20 @@ const Portfolio = () => {
         return (
             <div className="images-container">
                 <div className="image-box">
-                    <img src="#" alt="portfolio"  className='portfolio-image' />
+                    
+                    <img src= {todListImg} alt="portfolio"  className='portfolio-image-1' />
                     <div className="content">
-                        <p className='title'>Example 1</p>
-                        <h4 className='description'>Description</h4>
-                        <button className='btn' onClick={() => window.open("https://google.com/")}>View</button>
+                        <p className='title'>Todo-List</p>
+                        <h4 className='description'>Javascript, HTML, CSS<br /> Webpack, Node.js</h4>
+                        <button className='btn' onClick={() => window.open("https://junior4144.github.io/Todo-List-Project/")}>View</button>
                     </div>
                 </div>
                 <div className="image-box">
-                    <img src="#" alt="portfolio"  className='portfolio-image' />
+                    <img src={tic_tac_toe_img} alt="portfolio"  className='portfolio-image' />
                     <div className="content">
-                        <p className='title'>Example 2</p>
-                        <h4 className='description'>Description</h4>
-                        <button className='btn' onClick={() => window.open("https://google.com/")}>View</button>
+                        <p className='title'>Tic-Tac-Toe</p>
+                        <h4 className='description'>Javascript, HTML, CSS <br /> &nbsp; </h4>
+                        <button className='btn' onClick={() => window.open("https://junior4144.github.io/Tic-Tac-Toe-Project/")}>View</button>
                     </div>
                 </div>
                 
