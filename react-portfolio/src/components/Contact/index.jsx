@@ -49,7 +49,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I am interest in software engineering internships. Contact Me!
+                        I am interest in software engineering internships or if you have any questions. Contact Me!
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-
-import LogoTitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
-
+import React from 'react'
+import {Document} from 'react-pdf'; 
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -19,6 +17,7 @@ const Home = () => {
           setLetterClass('text-animate-hover')
         }, 5000)
     }, [])
+
 
     return (
         <>
@@ -44,7 +43,12 @@ const Home = () => {
                 <Link to ="/contact" className="flat-button">CONTACT ME</Link>
 
             </div>
-            <Logo />
+            <div className="resume-container">
+                 {/* <Document file= {samplePdf}/> */}
+                 {/* <Document file={samplePdf} onLoadError={console.error}/> */}
+                 
+            </div>
+            
         </div>
         <Loader type="pacman" />
         </>

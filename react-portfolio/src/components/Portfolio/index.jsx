@@ -53,7 +53,16 @@ const Portfolio = () => {
                         idx={15}
                     />
                 </h1>
+                {/* {<div>{renderPortfolio()}</div>} */}
+                <h1 className='page-title-classic'>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray = {"The Classics".split("")}
+                        idx={15}
+                    />
+                </h1>
                 {<div>{renderPortfolio()}</div>}
+                
             </div>
             <Loader type="pacman"/>
         </>
