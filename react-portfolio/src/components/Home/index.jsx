@@ -10,8 +10,7 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = ['u', 's', 't', 'a', 'v', 'o'];
-    const jobArray = ['i', 'n', 'c', 'o', 'm', 'i', 'n', 'g']
+    const nameArray = [' ','G', 'u', 's', 't', 'a', 'v', 'o', ','];
     const jobArray_2 =[  's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.'];
     
 
@@ -31,20 +30,17 @@ const Home = () => {
                 <br />
                 <span className={`${letterClass} _13`}>I</span>
                 <span className={`${letterClass} _14`}>'m</span>
-                <img src={LogoTitle} alt="developer" />
+                
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray} 
                 idx ={15}/>
-                <br />
-                <AnimatedLetters letterClass={letterClass}
-                strArray={jobArray} 
-                idx ={22}/>
+
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray_2} 
                 idx ={22}/>
                 </h1> 
-                <h2>CS Student / inspiring backend developer</h2>
+                <h2>CS Student at University of Houston / Focus in Backend Development</h2>
                 <Link to ="/contact" className="flat-button">CONTACT ME</Link>
 
             </div>
