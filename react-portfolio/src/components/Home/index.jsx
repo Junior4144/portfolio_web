@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
 import React from 'react'
-
+import doc from '../../documents/Gustavo_Resume_2025_for_web.pdf';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -40,12 +40,16 @@ const Home = () => {
                 idx ={22}/>
                 </h1> 
                 <h2>CS Student at University of Houston / Focus in Backend Development</h2>
-                <Link to ="/contact" className="flat-button">CONTACT ME</Link>
+                <div className='btn-container'>
+                    <Link to ="/contact" className="flat-button">CONTACT ME</Link>
+                    <a href= {doc} className="flat-button">DOWNLOAD CV</a>
+                </div>
+                    
 
             </div>
             <div className="resume-container">
                  {/* <Document file= {samplePdf}/> */}
-                 {/* <Document file={samplePdf} onLoadError={console.error}/> */}
+                 {/* <Document file={samplePdf} onLoadError={console.error}/> */}   
                  
             </div>
             
